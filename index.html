@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aangan Villa | Two-storey home, virtual walkthrough</title>
+  <meta name="description" content="Walk through Aangan Villa, from the front garden to the kitchen, by scrolling." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet" />
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#top">Aangan Villa</a>
+    <nav>
+      <a href="#overview">Overview</a>
+      <a href="#rooms">Rooms</a>
+      <a href="#features">Features</a>
+      <a class="btn-sm" href="#visit">Book a visit</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Scroll-driven walkthrough: scrolling plays the video -->
+    <section class="tour" id="tour">
+      <div class="stage">
+        <video id="tourVideo" src="/tour.mp4" muted playsinline preload="auto"></video>
+        <div class="shade"></div>
+        <div class="caption" id="caption">
+          <h1 id="capTitle">Welcome home.</h1>
+          <p id="capText">A flat-roofed villa in glass, stone and timber, lit for the evening. Scroll to walk inside.</p>
+        </div>
+        <ol class="rail" id="rail">
+          <li>Exterior</li>
+          <li>Entrance</li>
+          <li>Living</li>
+          <li>Bedroom</li>
+          <li>Kitchen</li>
+          <li>Dining</li>
+        </ol>
+        <div class="hint" id="hint">Scroll</div>
+      </div>
+    </section>
+
+    <section class="overview" id="overview">
+      <div class="wrap split">
+        <div>
+          <h2>Light, timber and stone, lit for the evening.</h2>
+          <p class="lead">Aangan Villa is a flat-roofed home in glass, stone and timber. Living, sleeping and cooking spaces flow into one another, with cove lighting overhead and large windows to the garden.</p>
+        </div>
+        <dl class="stats">
+          <div><dd>5</dd><dt>Bedrooms</dt></div>
+          <div><dd>6</dd><dt>Bathrooms</dt></div>
+          <div><dd>3,200</dd><dt>Square feet</dt></div>
+          <div><dd>2</dd><dt>Floors</dt></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="rooms" id="rooms">
+      <div class="wrap">
+        <div class="head"><h2>Room by room</h2><p>Every picture here is a frame from the walkthrough above.</p></div>
+        <div class="gallery">
+          <figure class="g1"><img src="/img/exterior.jpg" alt="Villa front elevation at dusk" loading="lazy" /><figcaption>Front elevation</figcaption></figure>
+          <figure class="g2"><img src="/img/entrance.jpg" alt="Glass entrance with lit steps" loading="lazy" /><figcaption>Entrance</figcaption></figure>
+          <figure class="g3"><img src="/img/living.jpg" alt="Living lounge with sectional sofa" loading="lazy" /><figcaption>Living lounge</figcaption></figure>
+          <figure class="g4"><img src="/img/bedroom.jpg" alt="Master bedroom" loading="lazy" /><figcaption>Master bedroom</figcaption></figure>
+          <figure class="g4"><img src="/img/kitchen.jpg" alt="Kitchen with marble island" loading="lazy" /><figcaption>Kitchen</figcaption></figure>
+          <figure class="g4"><img src="/img/dining.jpg" alt="Dining area with long table" loading="lazy" /><figcaption>Dining</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="inc" id="features">
+      <div class="wrap">
+        <h2>What's included</h2>
+        <div class="cols">
+          <div><h3>Outside</h3><ul><li>Landscaped garden with path lighting</li><li>Lit stone steps to a glass entrance</li><li>Timber canopy over the front door</li></ul></div>
+          <div><h3>Inside</h3><ul><li>Marble media wall in the lounge</li><li>Built-in shelving with accent lighting</li><li>Recessed cove lighting in every room</li></ul></div>
+          <div><h3>Kitchen</h3><ul><li>Marble-topped island with bar stools</li><li>Built-in double oven</li><li>Steel double-door fridge</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit" id="visit">
+      <div class="wrap split">
+        <div>
+          <h2>See it in person.</h2>
+          <p class="lead">Tell us when suits you. We reply on WhatsApp and confirm a viewing time within a day.</p>
+          <a class="mail" href="mailto:hello@example.com?subject=Aangan%20Villa%20viewing">Or send an email</a>
+        </div>
+        <form id="visitForm">
+          <label>Your name<input name="name" required autocomplete="name" /></label>
+          <label>Preferred day<input name="day" type="date" /></label>
+          <label>Message<textarea name="msg" rows="3" placeholder="Anything we should know?"></textarea></label>
+          <button class="btn" type="submit">Send on WhatsApp</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer><span class="brand">Aangan Villa</span><span>© 2026</span></footer>
+</body>
+</html>
